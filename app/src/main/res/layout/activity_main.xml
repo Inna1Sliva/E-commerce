@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15.31dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/location" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zihuatanejo, Gro "
+                android:textColor="#010035"
+                android:textSize="15sp"
+                app:fontFamily="@font/mark_pro" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:rotation="-90"
+                android:src="@drawable/ic_arrow_24" />
+
+            <ImageView
+                android:id="@+id/filter"
+                android:layout_width="11dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/filter" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="Select Category"
+                android:textColor="#010035"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/mark_pro" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:gravity="center"
+                android:text="view all"
+                android:textColor="#FF6E4E"
+                android:textSize="15sp"
+                app:fontFamily="@font/mark_pro" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="108dp"
+            tools:listitem="@layout/list_category" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:elevation="5dp"
+                app:cardCornerRadius="17dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/ic_search" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="bottom"
+                        android:layout_marginRight="15dp"
+                        android:hint="Search" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ok_pressed">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:src="@drawable/detalone"/>
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:src="@drawable/detalone"/>
+</LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:src="@drawable/detalone"/>
+                        <ImageView
+                            android:layout_width="9dp"
+                            android:layout_height="9dp"
+                            android:src="@drawable/ic_add"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/hotsales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="Hot sales"
+                android:textColor="#010035"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/mark_pro" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="see more"
+                android:textColor="#FF6E4E"
+                android:textSize="15sp"
+                app:fontFamily="@font/mark_pro" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recHotSalles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/BestSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="Best Seller"
+                android:textColor="#010035"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/mark_pro" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="see more"
+                android:textColor="#FF6E4E"
+                android:textSize="15sp"
+                app:fontFamily="@font/mark_pro" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recBestSeler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/image_item"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        app:cardCornerRadius="25dp"
+        android:backgroundTint="@color/basic_Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:layout_gravity="center"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/ic_brightness" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="@string/Explorer"
+                android:textColor="@color/white"
+                app:fontFamily="@font/mark_pro" />
+
+            <LinearLayout
+                android:id="@+id/shopp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="47dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:src="@drawable/shopp" />
+
+                    <com.nex3z.notificationbadge.NotificationBadge
+                        android:id="@+id/badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/folover"
+                android:layout_width="19dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="44dp"
+                android:src="@drawable/folover"/>
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="17.01dp"
+                android:layout_height="17.57dp"
+                android:layout_marginLeft="52dp"
+                android:src="@drawable/person"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/filterMenu"
+        android:layout_width="414dp"
+        android:layout_height="375dp"
+        android:visibility="gone"
+        android:background="@drawable/menu_filter"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.994">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/closeFilter"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:backgroundTint="@color/basic_Blue"
+                android:elevation="5dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_close" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="69dp"
+                android:layout_marginRight="44dp"
+                android:text="@string/Filter_options"
+                android:textColor="@color/basic_Blue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/mark_pro" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="86dp"
+                android:layout_height="37dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="7dp"
+                android:backgroundTint="@color/basic_orang">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/Done"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/Brand"
+        android:textColor="@color/basic_Blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/mark_pro" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="337dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/filter_edit_munu">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textBrand"
+                android:layout_width="287dp"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:layout_marginLeft="14dp"
+                android:text="@string/Samsung"
+                android:textColor="@color/basic_Blue"
+                android:textSize="18sp" />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:rotation="90"
+               android:src="@drawable/ic_dawn"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Price"
+        android:textColor="@color/basic_Blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/mark_pro" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="337dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/filter_edit_munu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textSize"
+                android:layout_width="287dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:gravity="center|left"
+                android:text="@string/price_two"
+                android:textColor="@color/basic_Blue"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:rotation="90"
+                android:src="@drawable/ic_dawn"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="46dp"
+        android:text="@string/Size"
+        android:textColor="@color/basic_Blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/mark_pro" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="337dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="46dp"
+        android:background="@drawable/filter_edit_munu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="287dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:gravity="center|left"
+                android:text="@string/to_inches"
+                android:textColor="@color/basic_Blue"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:rotation="90"
+                android:src="@drawable/ic_dawn" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

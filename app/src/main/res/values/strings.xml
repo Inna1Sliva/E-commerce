@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Ecommerce Concept</string>
+    <string name="category_books">Books</string>
+    <string name="Explorer">Explorer</string>
+    <string name="Filter_options">Filter options</string>
+    <string name="Done">Done</string>
+    <string name="Brand">Brand</string>
+    <string name="Price">Price</string>
+    <string name="Size">Size</string>
+    <string name="Samsung">Samsung</string>
+    <string name="to_inches">4.5 to 5.5 inches</string>
+    <string name="price_two">$300 - $500</string>
+    <string name="Product_Details">Product Details</string>
+    <string name="Galaxy_Note_Ultra">Galaxy Note 20 Ultra</string>
+    <string name="Shopp">Shop</string>
+    <string name="Details">Details</string>
+    <string name="Features">Features</string>
+    <string name="Phone">Phone</string>
+    <string name="Books">Books</string>
+    <string name="Computer">Computer</string>
+    <string name="Health">Health</string>
+    <string name="gb">256 GB</string>
+    <string name="Buy_now">Buy now!</string>
+    <string name="Select_color_and_capacity">Select color and capacity</string>
+    <string name="add_address">Add Address</string>
+    <string name="My_Cart">My Cart</string>
+    <string name="Total">Total</string>
+    <string name="totalnum">$6,000 us</string>
+    <string name="Delivery">Delivery</string>
+    <string name="Free">Free</string>
+    <string name="Checkout">Checkout</string>
+    <string name="price_cat">$3000.00</string>
+    <string name="number">2</string>
+
+</resources>
