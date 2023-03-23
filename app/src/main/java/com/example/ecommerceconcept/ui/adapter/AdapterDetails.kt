@@ -1,15 +1,16 @@
-package com.example.ecommerceconcept.adapter
+package com.example.ecommerceconcept.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.Glide
 import com.example.ecommerceconcept.R
 import com.example.ecommerceconcept.databinding.ImageItemBinding
 import com.example.ecommerceconcept.databinding.ImagePhoneBinding
-import com.example.ecommerceconcept.model.category.Image
-import com.example.ecommerceconcept.model.category.ProductDeteils
+import com.example.ecommerceconcept.domain.model.category.Image
+import com.example.ecommerceconcept.domain.model.category.ProductDeteils
 
 class AdapterDetails(val context: Context):RecyclerView.Adapter<AdapterDetails.DetailsViewHolder>() {
     private var listDetail:List<String> = listOf()

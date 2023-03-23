@@ -1,8 +1,8 @@
-package com.example.ecommerceconcept.viewModel
+package com.example.ecommerceconcept.domain.viewModel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.ecommerceconcept.repository.NetworkRepository
+import com.example.ecommerceconcept.domain.repository.NetworkRepository
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

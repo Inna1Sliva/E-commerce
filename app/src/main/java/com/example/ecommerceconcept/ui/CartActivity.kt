@@ -1,14 +1,15 @@
-package com.example.ecommerceconcept
+package com.example.ecommerceconcept.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.ecommerceconcept.adapter.AdapterCart
+import com.example.ecommerceconcept.DaggerApplication
+import com.example.ecommerceconcept.ui.adapter.AdapterCart
 import com.example.ecommerceconcept.databinding.ActivityCartBinding
-import com.example.ecommerceconcept.viewModel.MainViewModel
-import com.example.ecommerceconcept.viewModel.NetworkViewModelFactory
+import com.example.ecommerceconcept.domain.viewModel.MainViewModel
+import com.example.ecommerceconcept.domain.viewModel.NetworkViewModelFactory
 import javax.inject.Inject
 
 class CartActivity : AppCompatActivity() {

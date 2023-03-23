@@ -1,4 +1,4 @@
-package com.example.ecommerceconcept.model.category
+package com.example.ecommerceconcept.domain.model.category
 
 import com.google.gson.annotations.SerializedName
 

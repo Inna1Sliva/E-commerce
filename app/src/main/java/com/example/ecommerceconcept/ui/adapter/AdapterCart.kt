@@ -1,4 +1,4 @@
-package com.example.ecommerceconcept.adapter
+package com.example.ecommerceconcept.ui.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.ecommerceconcept.R
 import com.example.ecommerceconcept.databinding.ListItemCartBinding
-import com.example.ecommerceconcept.model.cart.Basket
+import com.example.ecommerceconcept.domain.model.cart.Basket
 
 
 class AdapterCart(val context: Context):RecyclerView.Adapter<AdapterCart.CartViewHolder>() {

@@ -1,10 +1,13 @@
-package com.example.ecommerceconcept.repository
+package com.example.ecommerceconcept.domain.repository
 
 import androidx.lifecycle.MutableLiveData
-import com.example.ecommerceconcept.model.cart.Basket
-import com.example.ecommerceconcept.model.cart.Cart
-import com.example.ecommerceconcept.model.category.*
-import com.example.ecommerceconcept.retrofit.RetrofitClient
+import com.example.ecommerceconcept.domain.model.cart.Basket
+import com.example.ecommerceconcept.domain.model.cart.Cart
+import com.example.ecommerceconcept.domain.model.category.BestSeller
+import com.example.ecommerceconcept.domain.model.category.HomeStore
+import com.example.ecommerceconcept.domain.model.category.ProductDeteils
+import com.example.ecommerceconcept.domain.model.category.SelectCategory
+import com.example.ecommerceconcept.data.retrofit.RetrofitClient
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import retrofit2.Call

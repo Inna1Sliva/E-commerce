@@ -1,4 +1,4 @@
-package com.example.ecommerceconcept
+package com.example.ecommerceconcept.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,13 +9,15 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.ecommerceconcept.adapter.AdapterBestSeller
-import com.example.ecommerceconcept.adapter.AdapterHotSale
-import com.example.ecommerceconcept.adapter.CategoryAdapter
+import com.example.ecommerceconcept.DaggerApplication
+import com.example.ecommerceconcept.R
+import com.example.ecommerceconcept.ui.adapter.AdapterBestSeller
+import com.example.ecommerceconcept.ui.adapter.AdapterHotSale
+import com.example.ecommerceconcept.ui.adapter.CategoryAdapter
 import com.example.ecommerceconcept.databinding.ActivityMainBinding
-import com.example.ecommerceconcept.model.category.Category
-import com.example.ecommerceconcept.viewModel.MainViewModel
-import com.example.ecommerceconcept.viewModel.NetworkViewModelFactory
+import com.example.ecommerceconcept.domain.model.category.Category
+import com.example.ecommerceconcept.domain.viewModel.MainViewModel
+import com.example.ecommerceconcept.domain.viewModel.NetworkViewModelFactory
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
@@ -127,10 +129,18 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun getCategoryList():ArrayList<Category> {
-        category.add(Category(0, R.drawable.not_pressed, R.drawable.phone_color,getString(R.string.Phone)))
-        category.add(Category(1, R.drawable.not_pressed, R.drawable.computer,getString(R.string.Computer)))
-        category.add(Category(2, R.drawable.not_pressed, R.drawable.health,getString(R.string.Health)))
-        category.add(Category(3, R.drawable.not_pressed, R.drawable.books_icon,getString(R.string.Books)))
+        category.add(Category(0,
+            R.drawable.not_pressed,
+            R.drawable.phone_color,getString(R.string.Phone)))
+        category.add(Category(1,
+            R.drawable.not_pressed,
+            R.drawable.computer,getString(R.string.Computer)))
+        category.add(Category(2,
+            R.drawable.not_pressed,
+            R.drawable.health,getString(R.string.Health)))
+        category.add(Category(3,
+            R.drawable.not_pressed,
+            R.drawable.books_icon,getString(R.string.Books)))
 
    return category
     }

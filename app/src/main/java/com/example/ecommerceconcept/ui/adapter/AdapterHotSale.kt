@@ -1,4 +1,4 @@
-package com.example.ecommerceconcept.adapter
+package com.example.ecommerceconcept.ui.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.example.ecommerceconcept.R
 import com.example.ecommerceconcept.databinding.HotSalesItemBinding
 
-import com.example.ecommerceconcept.model.category.HomeStore
+import com.example.ecommerceconcept.domain.model.category.HomeStore
 
 class AdapterHotSale(val context: Context): RecyclerView.Adapter<AdapterHotSale.HotSaleViewHolder>() {
 private var homeListstore:List<HomeStore> = listOf()
@@ -29,7 +29,7 @@ private var homeListstore:List<HomeStore> = listOf()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HotSaleViewHolder {
-        val view =HotSaleViewHolder(
+        val view = HotSaleViewHolder(
             HotSalesItemBinding.inflate(
                 LayoutInflater.from(parent.context), parent, false
             )

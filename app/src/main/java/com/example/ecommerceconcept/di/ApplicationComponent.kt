@@ -1,8 +1,8 @@
 package com.example.ecommerceconcept.di
 
-import com.example.ecommerceconcept.CartActivity
-import com.example.ecommerceconcept.MainActivity
-import com.example.ecommerceconcept.DetailsActivity
+import com.example.ecommerceconcept.ui.CartActivity
+import com.example.ecommerceconcept.ui.MainActivity
+import com.example.ecommerceconcept.ui.DetailsActivity
 import dagger.Component
 import javax.inject.Singleton
 

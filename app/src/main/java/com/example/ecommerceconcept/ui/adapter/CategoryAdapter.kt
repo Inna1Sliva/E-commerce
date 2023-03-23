@@ -1,4 +1,4 @@
-package com.example.ecommerceconcept.adapter
+package com.example.ecommerceconcept.ui.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ecommerceconcept.R
-import com.example.ecommerceconcept.model.category.Category
+import com.example.ecommerceconcept.domain.model.category.Category
 
 class CategoryAdapter( val context:Context, val category: List<Category>):RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
 

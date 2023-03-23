@@ -1,8 +1,8 @@
 package com.example.ecommerceconcept.di
 
 
-import com.example.ecommerceconcept.retrofit.Constants
-import com.example.ecommerceconcept.retrofit.RetrofitClient
+import com.example.ecommerceconcept.data.retrofit.Constants
+import com.example.ecommerceconcept.data.retrofit.RetrofitClient
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -23,7 +23,7 @@ class NetworkModuls {
 
     @Singleton
     @Provides
-    fun providesAPIService(retrofit: Retrofit):RetrofitClient{
+    fun providesAPIService(retrofit: Retrofit): RetrofitClient {
         return retrofit.create(RetrofitClient::class.java)
     }
 }

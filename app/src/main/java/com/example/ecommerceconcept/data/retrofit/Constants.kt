@@ -1,4 +1,4 @@
-package com.example.ecommerceconcept.retrofit
+package com.example.ecommerceconcept.data.retrofit
 
 object Constants {
 

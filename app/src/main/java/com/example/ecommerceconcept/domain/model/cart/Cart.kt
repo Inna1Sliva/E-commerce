@@ -1,4 +1,4 @@
-package com.example.ecommerceconcept.model.cart
+package com.example.ecommerceconcept.domain.model.cart
 
 data class Cart(
     val basket: List<Basket>,

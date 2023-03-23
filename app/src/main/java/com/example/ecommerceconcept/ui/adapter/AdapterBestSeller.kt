@@ -1,4 +1,4 @@
-package com.example.ecommerceconcept.adapter
+package com.example.ecommerceconcept.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.ecommerceconcept.R
 import com.example.ecommerceconcept.databinding.ImageItemBinding
-import com.example.ecommerceconcept.model.category.BestSeller
+import com.example.ecommerceconcept.domain.model.category.BestSeller
 
 class AdapterBestSeller( val context: Context):RecyclerView.Adapter<AdapterBestSeller.BestSellerViewHolder>() {
     private var bestseller:List<BestSeller> = listOf()
